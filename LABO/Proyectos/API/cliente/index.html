@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    -->
+    <script src="./ajax.js" defer></script>
+
+    <!--
+        <script src="./fetch.js" defer></script>
+    -->
+
+    <!--
+        https://www.npmjs.com/package/axios
+        NECESITO EL CDN DE AXIOS
+        <script src="./axios.js" defer></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <button onclick="getPersonas()">Traer Personas</button>
+    <button onclick="deletePersona(29)">Borrar Persona</button>
+    <button onclick="createPersona()">Alta Persona</button>
+    <button onclick="updatePersona()">Actualizar Persona</button>
+    <button onclick="getPersona(5)">Traer Persona por id</button>
+    <button onclick="getPersonasAsync()">Traer Personas Async</button>
+    <div id="spinner"></div>
+</body>
+</html>

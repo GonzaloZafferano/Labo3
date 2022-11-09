@@ -1,0 +1,154 @@
+{
+  "personas": [
+    {
+      "id": 1,
+      "nombre": "Arie",
+      "sexo": "Male"
+    },
+    {
+      "id": 2,
+      "nombre": "Leslie",
+      "sexo": "Male"
+    },
+    {
+      "id": 3,
+      "nombre": "Lainey",
+      "sexo": "Female"
+    },
+    {
+      "id": 4,
+      "nombre": "Roseanne",
+      "sexo": "Female"
+    },
+    {
+      "id": 5,
+      "nombre": "Carver",
+      "sexo": "Male"
+    },
+    {
+      "id": 6,
+      "nombre": "Oren",
+      "sexo": "Male"
+    },
+    {
+      "id": 7,
+      "nombre": "Lola",
+      "sexo": "Female"
+    },
+    {
+      "id": 8,
+      "nombre": "Janifer",
+      "sexo": "Female"
+    },
+    {
+      "id": 9,
+      "nombre": "Keely",
+      "sexo": "Female"
+    },
+    {
+      "id": 10,
+      "nombre": "Torin",
+      "sexo": "Male"
+    },
+    {
+      "id": 11,
+      "nombre": "Robin",
+      "sexo": "Female"
+    },
+    {
+      "id": 12,
+      "nombre": "Jan",
+      "sexo": "Male"
+    },
+    {
+      "id": 13,
+      "nombre": "Eveline",
+      "sexo": "Female"
+    },
+    {
+      "id": 14,
+      "nombre": "Walsh",
+      "sexo": "Male"
+    },
+    {
+      "id": 15,
+      "nombre": "Kania",
+      "sexo": "Female"
+    },
+    {
+      "id": 16,
+      "nombre": "Byram",
+      "sexo": "Male"
+    },
+    {
+      "id": 17,
+      "nombre": "Josephine",
+      "sexo": "Female"
+    },
+    {
+      "id": 18,
+      "nombre": "Clarette",
+      "sexo": "Female"
+    },
+    {
+      "id": 19,
+      "nombre": "Rafaelia",
+      "sexo": "Female"
+    },
+    {
+      "id": 20,
+      "nombre": "Noella",
+      "sexo": "Female"
+    },
+    {
+      "id": 21,
+      "nombre": "Melvyn",
+      "sexo": "Male"
+    },
+    {
+      "id": 22,
+      "nombre": "Norine",
+      "sexo": "Female"
+    },
+    {
+      "id": 23,
+      "nombre": "Joscelin",
+      "sexo": "Female"
+    },
+    {
+      "id": 24,
+      "nombre": "Shawnee",
+      "sexo": "Female"
+    },
+    {
+      "id": 25,
+      "nombre": "Benoit",
+      "sexo": "Male"
+    },
+    {
+      "id": 26,
+      "nombre": "Meade",
+      "sexo": "Female"
+    },
+    {
+      "id": 27,
+      "nombre": "Drugi",
+      "sexo": "Male"
+    },
+    {
+      "id": 28,
+      "nombre": "Gae",
+      "sexo": "Female"
+    },
+    {
+      "id": 32,
+      "nombre": "Julia",
+      "sexo": "Mujer"
+    },
+    {
+      "nombre": "Julio",
+      "sexo": "Hombre",
+      "id": 33
+    }
+  ]
+}

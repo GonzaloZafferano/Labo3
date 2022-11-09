@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+//NO RETORNA UNA TABLA, SINO QUE DEVUELVE UN UNICO VALOR.
+//ES UNA FUNCION DE VALOR UNICO, COMO LA FUNCION SQL DE SUM(), AVG(), etc.
+let numeros = [1,2,3,4,5,6,7,8,9,10]
+
+//PREVIO ES EL PRIMER ELEMENTO, Y EL ACTUAL ES EL SEGUNDO.
+//SI LE PASO UN SEGUNDO PARAMETRO AL REDUCE, EL
+//PREVIO SERA ESE PARAMETRO, Y EL ACTUAL SERA EL PRIMER ELEMENTO 
+//DE LA LISTA.
+total = numeros.reduce((previo, actual, indice, array)=>{
+
+    //EL PREVIO EN LA PRIMER ITERACION ES EL SEGUNDO ARGUMENTO DEL REDUCE,
+    //O EL PARAMETRO PREVIO DE LA FUNCION FLECHA.
+    //EN LA SEGUNDA Y PROXIMAS ITERACIONES, EL PREVIO SERA
+    //EL VALOR QUE RETORNE ESTA FUNCION, Y AHI ES DONDE CALCULAMOS.
+console.log(previo, actual, indice);
+
+return previo + actual; //SERA EL PREVIO DE LA SIGUIENTE ITERACION.
+});
+    
+
+let personas = [
+    {  nombre: "Juan", edad:30, sexo : 'm'},
+    {  nombre: "Andrea", edad:25, sexo : 'f'},
+    {  nombre: "Miguel", edad:56, sexo : 'm'}
+]
+
+let total2 = personas.reduce((previo, actual)=> previo + actual.edad, 0);
+   
+console.log(total2);
+  
+
+let mayorEdad = personas.filter(per => per.sexo === "m")
+                        .map(per => per.edad)
+                        .reduce((previo, actual)=>{
+                         if(previo >= actual){
+                            return previo;
+                         }
+                         else{
+                            return actual;
+                         }
+
+
+                         //=> previo >= actual ? previo : actual;
+                        });
+
+
+console.log(mayorEdad);
+
+
+let nombres = ["juan", "Adro", "lucia"];
+let numeros2 = [3,2,5,6,4,1];
+
+console.log(nombres.sort());
+console.log(numeros2.sort());
+console.log(numeros2.sort((a,b)=>b-a));
+
+
+console.log(personas.sort((a,b)=>a.nombre.localeCompare(b.nombre)));
+
+
+let numeros3 = [21,43,65];
+
+let [a,b,c] = numeros3;
+
+console.log(a,b,c);
+
+let {nombre, edad, sexo }  =     {  nombre: "Miguel", edad:56, sexo : 'm'};
+
+console.log(nombre);
+console.log(edad);
+console.log(sexo);
+
+
+
+function sumar (a,b, ...c){
+
+let rta = a + b;
+
+return c.reduce((previo, actual)=>previo + actual, rta);
+}
+
+
+
+
+
+
+
+let v1  = [5,3,5,4,3];
+
+
+//ESTO NO LO CLONA, ES LA MISMA REFERENCIA.
+let v2 = v1;
+
+//ESTO SII CLONA EL ARRAY.
+let v3 = [...v1];
+
+
+
+
+
+
+console.log(sumar(5,3,5,4,3));
+
+let x = [3,2,5,6,4,3,6,3];
+
+
+
+
+//BORRA REPETIDOS
+let miSet = new Set(x);
+
+console.log(miSet);
+
+let sinRepetidos = [...miSet];
+
+console.log(sinRepetidos);
+
+
+
+//CREO UNA FUNCION "unique" A TODOS LOS ARRAYS (Lo inserto en su prototipo)
+Array.prototype.unique = function(){
+    return [...new Set(this)];
+}
+
+
+
+console.log(x.unique());
+
+  </script>
+</body>
+</html>
